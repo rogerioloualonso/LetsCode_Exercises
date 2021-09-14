@@ -6,6 +6,7 @@ public class Lista2 {
 
     public static void questao1(){
 
+        /*Escreva um programa que recebe dois números inteiros e informa o resultado das operações soma, subtração, multiplicação e divisão. Considere sempre a ordem em que foram informados.*/
 
         Scanner sc = new Scanner(System.in);
 
@@ -22,6 +23,9 @@ public class Lista2 {
     }
 
     public static void questao2(){
+
+        /*Escreva um programa que informa a tabuada de um número informado (entre 1-10).*/
+
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("Digite um número inteiro:");
@@ -41,6 +45,9 @@ public class Lista2 {
     }
 
     public static void questao3(){
+
+        /*Escreva um programa que converte temperaturas de Celsius para Farenheit*/
+
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("Insira a temperatura em ºC:");
@@ -52,6 +59,9 @@ public class Lista2 {
     }
 
     public static void questao4(){
+
+        /*Escreva um programa que recebe a cotação do dólar do dia e, seguida recebe um valor em reais. A saída é a quantia em dólares. Use formatação de saída para exibir os valores de acordo com cada representação de moeda.*/
+
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("Insira a cotação do dólar:US$");
@@ -65,6 +75,9 @@ public class Lista2 {
     }
 
     public static void questao5(){
+
+        /*Escreva um programa que realiza conversão de medidas de polegadas em centímetros.*/
+
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("Insira o tamanho em polegada:");
