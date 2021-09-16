@@ -1,6 +1,6 @@
 package br.com.letscode.classes;
 
-public class calculator {
+public class Calculator {
 
     public static void main (String[] args){
 
