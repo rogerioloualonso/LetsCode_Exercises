@@ -34,7 +34,21 @@ public class Premiacao {
         }
     }
 
-  
+    public static String youngActor(List<Premiacao> premios){
+
+        String nome = "Desconhecido";
+        int maisNovo = 150;
+
+        for(Premiacao info : premios){
+            int idadeAtor = info.getAge();
+            if(idadeAtor < maisNovo){
+                maisNovo = idadeAtor;
+                nome = info.getName();
+            }
+        }
+
+        return nome;
+    }
 
 }
 
