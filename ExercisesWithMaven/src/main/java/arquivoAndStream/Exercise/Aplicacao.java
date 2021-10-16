@@ -26,17 +26,27 @@ public class Aplicacao {
         app.readFile(oscarMale, "oscarMale.csv");
         app.readFile(oscarFemale, "oscarFemale.csv");
 
-        //Guardando os dados separado por pessoa
-        //List<Ator> premiados = new ArrayList<>();
-        //addAtor(premiados, premiosMale);
-        //addAtor(premiados, premiosFemale);
-
         //Questão 1
-        System.out.printf("\n\nO ator mais jovem foi: ");
+        System.out.printf("\n\nO ator mais jovem foi ");
         atorMaisJovem(oscarMale);
 
         //Questão 2
+        System.out.printf("\nA Atriz mais premiada foi ");
         atrizMaisPremiada(oscarFemale);
+
+        //Questão 3
+        System.out.printf("\nA Atriz mais premiada entre 20 e 30 anos foi ");
+        atrizMaisPremiadafiltrada(oscarFemale);
+
+        //Questão 4
+        System.out.println("\n*** Lista de atores que receberam mais de um oscar ***");
+        maisDeUmOscar(oscarMale, oscarFemale);
+
+        //Questão 4
+        String nome = "Katharine Hepburn";
+        System.out.printf("\n*** %s ***:\n", nome);
+        resumoAtor(oscarMale, oscarFemale, nome);
+
 
     }
 
