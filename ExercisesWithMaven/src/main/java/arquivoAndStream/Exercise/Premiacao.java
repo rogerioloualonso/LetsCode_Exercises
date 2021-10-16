@@ -1,6 +1,6 @@
-package arquivoAndStream;
+package arquivoAndStream.Exercise;
 
-import lombok.Value;
+import lombok.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,7 +9,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Value
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 
 public class Premiacao {
     private int index;
@@ -50,6 +54,30 @@ public class Premiacao {
         return nome;
     }
 
+    public static void atrizMaisPremiada(List<Premiacao> premios){
+        String nome = "Desconhecido";
+        int qtdMax = 0;
+
+        for(Premiacao num:premios){
+            int qtd = 0;
+
+            for(Premiacao i:premios) {
+                String aux1 = i.getName();
+                String aux2 = num.getName();
+                if (aux1.equals(aux2)) {
+                    qtd++;
+                }
+            }
+
+            if(qtd >= qtdMax){
+                nome = num.getName();
+                qtdMax = qtd;
+            }
+            qtd = 0;
+        }
+
+        System.out.println(nome);
+    }
 }
 
 
